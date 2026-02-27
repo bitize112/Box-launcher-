@@ -1,0 +1,49 @@
+# Android / Gradle
+.gradle/
+local.properties
+**/build/
+**/captures/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Java
+*.jar
+*.war
+*.ear
+hs_err_pid*
+replay_pid*
+
+# C / C++
+*.o
+*.obj
+*.so
+*.a
+*.out
+*.exe
+*.dll
+*.dylib
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+Makefile
+
+# NDK / native intermediates
+.cxx/
+.externalNativeBuild/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
