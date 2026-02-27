@@ -11,7 +11,7 @@
 - Automatically choose the best backend when developers do not specify one.
 
 ## Backend strategy
-The launcher ships a backend selector (`src/backendSelector.js`) that chooses an engine based on workload:
+The launcher ships a backend selector (`js-api/backendSelector.js`) that chooses an engine based on workload:
 
 - `heavyInstrumentation` → tends toward Frida-Gum for deep, dynamic hooks.
 - `performanceCritical` → tends toward And64InlineHook for low overhead.
