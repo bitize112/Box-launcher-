@@ -5,6 +5,7 @@ add_library(
     boxlauncher
     SHARED
     src/main.cpp
+    src/HookEngine.cpp
 )
 
 target_compile_features(boxlauncher PRIVATE cxx_std_17)
