@@ -1,0 +1,34 @@
+# Android/Gradle
+.gradle/
+**/.gradle/
+local.properties
+.idea/
+*.iml
+build/
+**/build/
+.cxx/
+.externalNativeBuild/
+
+# Java
+*.class
+out/
+
+# C/C++
+*.o
+*.so
+*.a
+*.obj
+*.dll
+*.dylib
+*.exe
+
+# NDK/CMake
+.cmake/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+
+# OS
+.DS_Store
+Thumbs.db
