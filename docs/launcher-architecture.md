@@ -11,7 +11,7 @@
 - Automatically choose the best backend when developers do not specify one.
 
 ## Backend strategy
-The launcher ships a backend selector (`js-api/backendSelector.js`) that chooses an engine based on workload:
+The launcher ships a backend selector (`src/backendSelector.js`) that chooses an engine based on workload:
 
 - `heavyInstrumentation` → tends toward Frida-Gum for deep, dynamic hooks.
 - `performanceCritical` → tends toward And64InlineHook for low overhead.
@@ -97,9 +97,3 @@ Example `mod.json`:
 - Added an Android prototype app (`android/`) to validate launcher configuration UX on-device.
 - The app mirrors backend behavior: manual override or automatic choice by workload.
 - Current APK target is for UI/selection testing only; it does not yet inject hooks into the Bedrock process.
-
-
-## Repository cleanup baseline
-- Native runtime code is now in `core/`.
-- JavaScript mod-facing API code is now in `js-api/`.
-- Android UI + JNI bridge lives in `android/`.

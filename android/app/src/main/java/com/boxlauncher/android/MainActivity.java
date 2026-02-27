@@ -1,23 +1,18 @@
 package com.boxlauncher.android;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    static {
-        System.loadLibrary("boxlauncher");
-    }
-
     private Spinner workloadSpinner;
     private Spinner backendSpinner;
     private TextView resultText;
-    private TextView nativeHelloText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,10 +22,7 @@ public class MainActivity extends AppCompatActivity {
         workloadSpinner = findViewById(R.id.workloadSpinner);
         backendSpinner = findViewById(R.id.backendSpinner);
         resultText = findViewById(R.id.resultText);
-        nativeHelloText = findViewById(R.id.nativeHelloText);
         Button selectButton = findViewById(R.id.selectButton);
-
-        nativeHelloText.setText(stringFromNative());
 
         ArrayAdapter<WorkloadProfile> workloadAdapter = new ArrayAdapter<>(
                 this,
@@ -84,6 +76,4 @@ public class MainActivity extends AppCompatActivity {
                 "JavaScript remains the primary mod language; C/C++/Rust can be loaded as native modules."
         );
     }
-
-    public native String stringFromNative();
 }

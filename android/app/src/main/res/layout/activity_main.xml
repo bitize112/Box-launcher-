@@ -13,6 +13,7 @@
         android:textStyle="bold" />
 
     <TextView
+<<<<<<< codex/create-mode-launcher-for-minecraft-bedrock-j8j7gk
         android:id="@+id/nativeHelloText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,6 +21,8 @@
         android:textStyle="italic" />
 
     <TextView
+=======
+>>>>>>> main
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
